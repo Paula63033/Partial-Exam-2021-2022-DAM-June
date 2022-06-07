@@ -63,7 +63,7 @@
             android:id="@+id/livesTv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/qa_vides"
+            android:text='@{Integer.toString(viewModel.qa_vides) + " vides"}'
             android:textAlignment="center"
             android:textColor="#5D4037"
             android:textSize="14sp"
@@ -96,6 +96,7 @@
 
         <ImageButton
             android:id="@+id/purchaseLivesBt"
+            android:onClick="@{() -> viewModel.botonAdventure()}"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="132dp"
