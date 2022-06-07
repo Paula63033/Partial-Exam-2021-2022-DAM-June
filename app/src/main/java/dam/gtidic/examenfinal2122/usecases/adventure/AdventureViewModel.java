@@ -22,9 +22,14 @@ public class AdventureViewModel  extends ViewModel {
     }
 
     public void botonAdventure(){
-        //int vida = PreferencesProvider.providePreferences().getInt("numero",0);
         int vida = qa_vides.getValue() + 1;
         qa_vides.setValue(vida);
+    }
+
+    public void resetGame(){
+        PreferencesProvider.providePreferences().edit().putInt("current_level",0).commit();
+        int resetLevel = PreferencesProvider.providePreferences().getInt("current_level",0);
+
     }
 
 
