@@ -48,8 +48,9 @@ public class AdventureActivity extends AppCompatActivity {
         Log.d(this.getClass().getSimpleName(),"...data() ");
     }
 
-    private void showMathAdventure(View view){
-            startActivity( new Intent(this, GameActivityMath.class));
+    public void showMathAdventure(View view){
+        Intent intent = new Intent(this, GameActivityMath.class);
+        startActivity(intent);
     }
 
 

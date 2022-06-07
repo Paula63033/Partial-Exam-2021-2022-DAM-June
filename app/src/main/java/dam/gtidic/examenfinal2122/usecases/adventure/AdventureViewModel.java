@@ -10,6 +10,13 @@ import java.util.List;
 
 import dam.gtidic.examenfinal2122.utils.PreferencesProvider;
 
-public class AdventureViewModel  {
+public class AdventureViewModel  extends ViewModel {
+    public MutableLiveData<String> adventure;
+
+    //constructor
+    public AdventureViewModel() {
+        this.adventure = new MutableLiveData<>();
+    }
+
 
 }
