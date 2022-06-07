@@ -49,7 +49,10 @@ public class AdventureActivity extends AppCompatActivity {
     }
 
     public void showMathAdventure(View view){
+        //si les vides son diferents a 0 salta al GameActivityMath, sinó, no fa res
+        if (viewModel.qa_vides.getValue()!=0){
             startActivity( new Intent(this, GameActivityMath.class));
+        }
     }
 
 
